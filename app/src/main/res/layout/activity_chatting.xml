@@ -84,7 +84,7 @@
             android:maxLines="1"
             android:text="Chatting with GemX"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -128,8 +128,8 @@
         android:layout_marginTop="72dp"
         android:text="Anything...."
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="36dp"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewhello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewhello" />
@@ -172,7 +172,7 @@
                     android:text="\u25CF   Explain quantum computing"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/suggestion2"
@@ -187,7 +187,7 @@
                     android:text="\u25CF   How do I make an HTTP in Javascript ?"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/suggestion3"
@@ -202,7 +202,7 @@
                     android:text="\u25CF   How can I start freelancing for free?"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/suggestion4"
@@ -217,7 +217,7 @@
                     android:text="\u25CF   E-commerce webdesign"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
 
             </LinearLayout>

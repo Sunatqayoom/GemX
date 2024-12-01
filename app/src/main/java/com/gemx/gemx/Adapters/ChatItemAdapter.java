@@ -87,17 +87,21 @@ public class ChatItemAdapter extends RecyclerView.Adapter<ChatItemAdapter.ItemVi
 
         if (context instanceof ViewShareChat) {
             holder.refreshBtn.setVisibility(View.GONE);
+            holder.reportBtn.setVisibility(View.GONE);
         }else{
             if(lastItemPosition !=-1){
                 if (position == lastItemPosition) {
                     if(imageUrlItem.equals("na")){
                         holder.refreshBtn.setVisibility(View.VISIBLE);
+                        holder.reportBtn.setVisibility(View.VISIBLE);
                     }else{
                         holder.refreshBtn.setVisibility(View.GONE);
+                        holder.reportBtn.setVisibility(View.GONE);
                     }
                     //do refresh
                 }else {
                     holder.refreshBtn.setVisibility(View.GONE);
+                    holder.reportBtn.setVisibility(View.GONE);
                 }
             }
         }
@@ -108,6 +112,10 @@ public class ChatItemAdapter extends RecyclerView.Adapter<ChatItemAdapter.ItemVi
                     mListener.onRefresh(position);
                 }
             }
+        });
+
+        holder.reportBtn.setOnClickListener(view -> {
+            Toast.makeText(context, "Content Reported", Toast.LENGTH_SHORT).show();
         });
     }
 
@@ -149,7 +157,7 @@ public class ChatItemAdapter extends RecyclerView.Adapter<ChatItemAdapter.ItemVi
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView sender,receiver;
-        ImageView chatImage,copyBtn,refreshBtn;
+        ImageView chatImage,copyBtn,refreshBtn,reportBtn;
         ConstraintLayout displayImageLayout;
 
         public ItemViewHolder(@NonNull View itemView) {
@@ -159,6 +167,7 @@ public class ChatItemAdapter extends RecyclerView.Adapter<ChatItemAdapter.ItemVi
             chatImage = itemView.findViewById(R.id.chatImage);
             displayImageLayout = itemView.findViewById(R.id.other);
             copyBtn = itemView.findViewById(R.id.copy);
+            reportBtn = itemView.findViewById(R.id.report);
             refreshBtn = itemView.findViewById(R.id.refresh);
         }
     }
