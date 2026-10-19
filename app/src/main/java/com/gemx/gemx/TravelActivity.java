@@ -68,7 +68,7 @@ public class TravelActivity extends AppCompatActivity {
         Button submitBtn = findViewById(R.id.submitBtn);
 
         client = new OkHttpClient();
-        gm = new GenerativeModel("gemini-1.5-flash",AppConfig.geminiAPIkey);
+        gm = new GenerativeModel("gemini-3.6-flash",AppConfig.geminiAPIkey);
 
         autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
         autoCompleteTextView.addTextChangedListener(new TextWatcher() {

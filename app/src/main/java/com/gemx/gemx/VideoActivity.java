@@ -99,7 +99,7 @@ public class VideoActivity extends AppCompatActivity implements TextToSpeech.OnI
         // Initialize TextToSpeech
         textToSpeech = new TextToSpeech(this, this);
 
-        gm = new GenerativeModel("gemini-1.5-flash",AppConfig.geminiAPIkey);
+        gm = new GenerativeModel("gemini-3.6-flash",AppConfig.geminiAPIkey);
 
         preview = findViewById(R.id.cameraView);
         ImageView back =findViewById(R.id.back);

@@ -88,7 +88,7 @@ public class TalkActivity extends AppCompatActivity implements TextToSpeech.OnIn
         // Initialize TextToSpeech
         textToSpeech = new TextToSpeech(this, this);
 
-        gm = new GenerativeModel("gemini-1.5-flash",AppConfig.geminiAPIkey);
+        gm = new GenerativeModel("gemini-3.6-flash",AppConfig.geminiAPIkey);
 
     }
 

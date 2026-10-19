@@ -1,37 +1,79 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.GemX" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your light theme here. -->
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.GemX"
+        parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:textViewStyle">@style/CustomFontTextView</item>
-<!--        <item name="android:windowIsTranslucent">true</item>-->
+
+        <!-- Opt out of edge-to-edge enforcement where supported -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement"
+            tools:targetApi="35">true</item>
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">false</item>
+
     </style>
 
-    <style name="Base.Theme.GemX.splash" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your light theme here. -->
+    <!-- Splash theme -->
+    <style name="Base.Theme.GemX.splash"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:textViewStyle">@style/CustomFontTextView</item>
-        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowOptOutEdgeToEdgeEnforcement"
+            tools:targetApi="35">true</item>
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+
     </style>
 
-    <style name="Theme.GemX" parent="Base.Theme.GemX" />
+    <!-- Main application theme -->
+    <style name="Theme.GemX"
+        parent="Base.Theme.GemX" />
 
-    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!-- Alert dialog theme -->
+    <style name="MyAlertDialogStyle"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+
         <item name="colorAccent">@color/progress_color</item>
+
     </style>
 
-    <style name="CustomFontTextView" parent="android:Widget.TextView">
+    <!-- Custom font -->
+    <style name="CustomFontTextView"
+        parent="android:Widget.TextView">
+
         <item name="android:fontFamily">@font/arial</item>
+
     </style>
 
-    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+    <!-- Full-screen dialog theme -->
+    <style name="FullScreenDialog"
+        parent="Theme.AppCompat.Light.Dialog">
+
         <item name="android:windowIsFloating">false</item>
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
-    </style>
+        <item name="android:windowIsTranslucent">false</item>
 
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+
+        <item name="android:windowOptOutEdgeToEdgeEnforcement"
+            tools:targetApi="35">true</item>
+
+    </style>
 
 </resources>

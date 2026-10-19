@@ -146,7 +146,7 @@ public class ChattingActivity extends AppCompatActivity implements ChatItemAdapt
 
 
         //chatting components
-        gm = new GenerativeModel("gemini-1.5-flash",AppConfig.geminiAPIkey);
+        gm = new GenerativeModel("gemini-3.6-flash",AppConfig.geminiAPIkey);
         sender = new ArrayList<>();
         receiver = new ArrayList<>();
         imageUrlList = new ArrayList<>();

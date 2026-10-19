@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.gemx.gemx"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.gemx.gemx"
         minSdk = 23
-        targetSdk = 34
-        versionCode = 6
-        versionName = "1.2024.12"
+        targetSdk = 36
+        versionCode = 11
+        versionName = "3.2026.10"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
