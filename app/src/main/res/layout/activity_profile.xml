@@ -328,6 +328,61 @@
 
 
             </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/childSafety"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                app:cardBackgroundColor="#36000000"
+                app:cardCornerRadius="39dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutUs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/about"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="left|center"
+                        android:paddingStart="5dp"
+                        android:text="Child Safety"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_weight="1"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/back"
+                        app:tint="@color/white">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

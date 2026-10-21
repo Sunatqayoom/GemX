@@ -57,7 +57,7 @@ public class ProfileActivity extends AppCompatActivity {
         privacyPolicy.setOnClickListener(v->visitWebsite("https://geminiai-kz9x.onrender.com/privacypolicy"));
         help.setOnClickListener(v->visitWebsite("https://geminiai-kz9x.onrender.com/help"));
         aboutUs.setOnClickListener(v->visitWebsite("https://geminiai-kz9x.onrender.com/aboutus"));
-
+        findViewById(R.id.childSafety).setOnClickListener(v->visitWebsite("https://docs.google.com/document/d/1b6GAwtSR4kXVWf9RZXhvivtTAOJXtMDf1x8TSUPuEEg/edit?usp=drive_linkhttps://docs.google.com/document/d/1b6GAwtSR4kXVWf9RZXhvivtTAOJXtMDf1x8TSUPuEEg/edit?usp=drive_link"));
     }
 
     private void getUserDetails(String userId) {

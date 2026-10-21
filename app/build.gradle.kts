@@ -11,8 +11,8 @@ android {
         applicationId = "com.gemx.gemx"
         minSdk = 23
         targetSdk = 36
-        versionCode = 12
-        versionName = "4.2026.10"
+        versionCode = 13
+        versionName = "5.2026.10"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
